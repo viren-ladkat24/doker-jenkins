@@ -41,8 +41,8 @@ pipeline {
         stage('Docker Build') {
             steps {
                 sh """
-                ssh ${SSH_USER}@${DOCKER_SERVER_IP} '
-                docker build -t ${IMAGE_NAME} .
+                ssh root@15.206.187.252 '
+                docker build -t jenkins-demo-image . 
                 '
                 """
             }
