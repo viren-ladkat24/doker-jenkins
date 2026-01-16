@@ -39,14 +39,16 @@ pipeline {
         }
 
         stage('Docker Build') {
-            steps {
-                sh """
-                ssh root@15.206.187.252 '
-                docker build -t jenkins-demo-image . 
-                '
-                """
-            }
-        }
+    steps {
+        sh '''
+        ssh root@15.206.187.252 '
+        cd /home/ec2-user &&
+        docker build -t jenkins-demo-image .
+        '
+        '''
+    }
+}
+
 
         stage('Docker Run') {
             steps {
