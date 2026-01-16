@@ -1,1 +1,100 @@
-<h1>Hello from Jenkins Docker Pipeline 🚀</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #1c1c1c;
+            padding: 25px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 15px rgba(255,0,0,0.6);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff3c3c;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+
+        input, select {
+            background: #2c2c2c;
+            color: #fff;
+        }
+
+        button {
+            background: #ff3c3c;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e63232;
+        }
+
+        .note {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Gym Registration</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="number" placeholder="Age" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <input type="email" placeholder="Email Address">
+
+        <select required>
+            <option value="">Select Plan</option>
+            <option>1 Month</option>
+            <option>3 Months</option>
+            <option>6 Months</option>
+            <option>12 Months</option>
+        </select>
+
+        <select required>
+            <option value="">Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <button type="submit">Register Now</button>
+    </form>
+
+    <div class="note">
+        Train Hard. Stay Strong. 💪
+    </div>
+</div>
+
+</body>
+</html>
